@@ -231,12 +231,13 @@ UnknownText_0x7a604:
 	done
 
 UnknownText_0x7a6bd:
-	text "#MON GEAR, or"
-	line "just #GEAR."
+	text "Did you like the"
+	line "RUNNING SHOES I"
+	cont "bought you?"
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
+	para "Just hold the B"
+	line "button and you're"
+	cont "off!"
 
 	para "Oh, the day of the"
 	line "week isn't set."

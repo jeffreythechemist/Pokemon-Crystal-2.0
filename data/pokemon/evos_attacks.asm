@@ -1647,7 +1647,7 @@ StaryuEvosAttacks:
 	db 7, WATER_GUN
 	db 13, RAPID_SPIN
 	db 19, RECOVER
-	db 25, SWIFT
+	db 25, PSYCHIC_M
 	db 31, BUBBLEBEAM
 	db 37, MINIMIZE
 	db 43, LIGHT_SCREEN

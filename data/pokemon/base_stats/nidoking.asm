@@ -13,7 +13,7 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/nidoking/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db GROWTH_MEDIUM_SLOW ; growth rate
+	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_MONSTER, EGG_GROUND ; egg groups
 
 	; tm/hm learnset

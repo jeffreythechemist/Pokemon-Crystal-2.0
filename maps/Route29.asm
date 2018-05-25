@@ -315,11 +315,15 @@ Route29TeacherText:
 	done
 
 Route29FisherText:
-	text "I wanted to take a"
-	line "break, so I saved"
+	text "I heard there are"
+	line "18 rare #MON on"
 
-	para "to record my"
-	line "progress."
+	para "the other side of"
+	line "this gate!"
+
+	para "I'd go there at"
+	line "different times"
+	cont "too if I were you."
 	done
 
 ; unused

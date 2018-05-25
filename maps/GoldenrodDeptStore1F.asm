@@ -45,8 +45,9 @@ GoldenrodDeptStore1FGentlemanText:
 	done
 
 GoldenrodDeptStore1FPokefanFText:
-	text "I'm raring to shop"
-	line "again today!"
+	text "I heard the store"
+	line "now sells evol-"
+	cont "ution stones!"
 	done
 
 GoldenrodDeptStore1FBugCatcherText:

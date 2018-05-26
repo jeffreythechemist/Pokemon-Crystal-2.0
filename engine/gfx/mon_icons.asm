@@ -1,17 +1,17 @@
 LoadOverworldMonIcon: ; 8e82b
-	ld a, e
-	call ReadMonMenuIcon
-	ld l, a
-	ld h, 0
-	add hl, hl
-	ld de, IconPointers
-	add hl, de
-	ld a, [hli]
-	ld e, a
-	ld d, [hl]
-	ld b, BANK(Icons)
-	ld c, 8
-	ret
+ld a, e
+ld [wCurIcon], a
+call ReadMonMenuIcon
+ld l, a
+ld h, 0
+add hl, hl
+ld de, IconPointers
+add hl, de
+ld a, [hli]
+ld e, a
+ld d, [hl]
+call GetIconBank
+ret
 ; 8e83f
 
 LoadMenuMonIcon: ; 8e83f
@@ -347,12 +347,22 @@ endr
 	ld d, [hl]
 	pop hl
 
-	lb bc, BANK(Icons), 8
+	call GetIconBank
 	call GetGFXUnlessMobile
 
 	pop hl
 	ret
 ; 8ea3f
+
+GetIconBank:
+ ld a, [wCurIcon]
+ cp a, $80
+ jr nc, .get_bank_2
+ lb bc, BANK(Icons1), 8
+ ret
+.get_bank_2
+ lb bc, BANK(Icons2), 8
+ ret
 
 GetGFXUnlessMobile: ; 8ea3f
 	ld a, [wLinkMode]

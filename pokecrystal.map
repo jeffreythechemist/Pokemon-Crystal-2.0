@@ -8053,7 +8053,7 @@ ROM Bank #13:
     SLACK: $011E bytes
 
 ROM Bank #14:
-  SECTION: $4000-$7A74 ($3A75 bytes) ["Enemy Trainers"]
+  SECTION: $4000-$7A75 ($3A76 bytes) ["Enemy Trainers"]
            $552D = GetTrainerClassName
            $594C = GetTrainerName
            $5999 = TrainerGroups
@@ -8468,44 +8468,44 @@ ROM Bank #14:
            $6208 = CooltrainerMGroup
            $635D = CooltrainerFGroup
            $64A2 = BeautyGroup
-           $658C = PokemaniacGroup
-           $6637 = GruntMGroup
-           $67C3 = GentlemanGroup
-           $6800 = SkierGroup
-           $6819 = TeacherGroup
-           $683F = SabrinaGroup
-           $685B = BugCatcherGroup
-           $6962 = FisherGroup
-           $6AD9 = SwimmerMGroup
-           $6BF8 = SwimmerFGroup
-           $6CDD = SailorGroup
-           $6D90 = SuperNerdGroup
-           $6E38 = Rival2Group
-           $6F28 = GuitaristGroup
-           $6F44 = HikerGroup
-           $709A = BikerGroup
-           $710F = BlaineGroup
-           $712A = BurglarGroup
-           $715D = FirebreatherGroup
-           $71B5 = JugglerGroup
-           $7214 = BlackbeltGroup
-           $729E = ExecutiveMGroup
-           $7310 = PsychicGroup
-           $73C6 = PicnickerGroup
-           $7526 = CamperGroup
-           $764D = ExecutiveFGroup
-           $7689 = SageGroup
-           $7717 = MediumGroup
-           $776E = BoarderGroup
-           $7798 = PokefanMGroup
-           $7859 = KimonoGirlGroup
-           $7895 = TwinsGroup
-           $7955 = PokefanFGroup
-           $79AA = RedGroup
-           $79D4 = BlueGroup
-           $79FF = OfficerGroup
-           $7A14 = GruntFGroup
-           $7A5A = MysticalmanGroup
+           $658D = PokemaniacGroup
+           $6638 = GruntMGroup
+           $67C4 = GentlemanGroup
+           $6801 = SkierGroup
+           $681A = TeacherGroup
+           $6840 = SabrinaGroup
+           $685C = BugCatcherGroup
+           $6963 = FisherGroup
+           $6ADA = SwimmerMGroup
+           $6BF9 = SwimmerFGroup
+           $6CDE = SailorGroup
+           $6D91 = SuperNerdGroup
+           $6E39 = Rival2Group
+           $6F29 = GuitaristGroup
+           $6F45 = HikerGroup
+           $709B = BikerGroup
+           $7110 = BlaineGroup
+           $712B = BurglarGroup
+           $715E = FirebreatherGroup
+           $71B6 = JugglerGroup
+           $7215 = BlackbeltGroup
+           $729F = ExecutiveMGroup
+           $7311 = PsychicGroup
+           $73C7 = PicnickerGroup
+           $7527 = CamperGroup
+           $764E = ExecutiveFGroup
+           $768A = SageGroup
+           $7718 = MediumGroup
+           $776F = BoarderGroup
+           $7799 = PokefanMGroup
+           $785A = KimonoGirlGroup
+           $7896 = TwinsGroup
+           $7956 = PokefanFGroup
+           $79AB = RedGroup
+           $79D5 = BlueGroup
+           $7A00 = OfficerGroup
+           $7A15 = GruntFGroup
+           $7A5B = MysticalmanGroup
            $4000 = AI_SwitchOrTryItem
            $5939 = Battle_GetTrainerName
            $557B = GetTrainerAttributes
@@ -8522,7 +8522,7 @@ ROM Bank #14:
            $5453 = AI_Status
            $54A9 = AI_Risky
            $5502 = AI_None
-    SLACK: $058B bytes
+    SLACK: $058A bytes
 
 ROM Bank #15:
   SECTION: $4000-$7E85 ($3E86 bytes) ["Battle Core"]
@@ -12091,7 +12091,7 @@ ROM Bank #22:
     SLACK: $08EE bytes
 
 ROM Bank #23:
-  SECTION: $4000-$7098 ($3099 bytes) ["Map Scripts 3"]
+  SECTION: $4000-$7076 ($3077 bytes) ["Map Scripts 3"]
            $4000 = NationalPark_MapScripts
            $4806 = NationalPark_MapEvents
            $48EA = NationalParkBugContest_MapScripts
@@ -12103,7 +12103,7 @@ ROM Bank #23:
            $653E = RadioTower3F_MapScripts
            $6B01 = RadioTower3F_MapEvents
            $6B80 = RadioTower4F_MapScripts
-           $701A = RadioTower4F_MapEvents
+           $6FF8 = RadioTower4F_MapEvents
            $41D3 = NationalParkLassText
            $422E = NationalParkPokefanFText
            $401D = NationalParkTeacher1Script.GotQuickClaw
@@ -12422,12 +12422,12 @@ ROM Bank #23:
            $6F15 = GruntF4BeatenText
            $6BF0 = TrainerGruntF4.Script
            $6F31 = GruntF4AfterBattleText
-           $6F62 = ScientistRichSeenText
-           $6FA3 = ScientistRichBeatenText
-           $6C04 = TrainerScientistRich.Script
-           $6FCB = ScientistRichAfterBattleText
-           $6FFE = RadioTower4FProductionSignText
-           $700D = RadioTower4FStudio2SignText
+           $6F62 = ScientistHOLDENSeenText
+           $6F89 = ScientistHOLDENBeatenText
+           $6C04 = TrainerScientistHOLDEN.Script
+           $6FA9 = ScientistHOLDENAfterBattleText
+           $6FDC = RadioTower4FProductionSignText
+           $6FEB = RadioTower4FStudio2SignText
            $6C0C = RadioTower4FProductionSign
            $6C0F = RadioTower4FStudio2Sign
            $6B82 = RadioTower4FFisherScript
@@ -12436,8 +12436,8 @@ ROM Bank #23:
            $6BBC = TrainerGruntM10
            $6BD0 = TrainerExecutivem2
            $6BE4 = TrainerGruntF4
-           $6BF8 = TrainerScientistRich
-    SLACK: $0F67 bytes
+           $6BF8 = TrainerScientistHOLDEN
+    SLACK: $0F89 bytes
 
 ROM Bank #24:
   SECTION: $4000-$728D ($328E bytes) ["Map Scripts 4"]
@@ -13518,7 +13518,7 @@ ROM Bank #27:
     SLACK: $095C bytes
 
 ROM Bank #28:
-  SECTION: $4000-$76EC ($36ED bytes) ["Map Scripts 7"]
+  SECTION: $4000-$76E5 ($36E6 bytes) ["Map Scripts 7"]
            $4000 = LakeOfRage_MapScripts
            $4919 = LakeOfRage_MapEvents
            $49DE = CeladonDeptStore1F_MapScripts
@@ -13554,17 +13554,17 @@ ROM Bank #28:
            $66E7 = CeladonGameCornerPrizeRoom_MapScripts
            $6A34 = CeladonGameCornerPrizeRoom_MapEvents
            $6A68 = CeladonGym_MapScripts
-           $6FDF = CeladonGym_MapEvents
-           $7047 = CeladonCafe_MapScripts
-           $7316 = CeladonCafe_MapEvents
-           $7371 = Route16FuchsiaSpeechHouse_MapScripts
-           $73BC = Route16FuchsiaSpeechHouse_MapEvents
-           $73E3 = Route16Gate_MapScripts
-           $74DF = Route16Gate_MapEvents
-           $7516 = Route7SaffronGate_MapScripts
-           $75E0 = Route7SaffronGate_MapEvents
-           $7607 = Route17Route18Gate_MapScripts
-           $76B6 = Route17Route18Gate_MapEvents
+           $6FD8 = CeladonGym_MapEvents
+           $7040 = CeladonCafe_MapScripts
+           $730F = CeladonCafe_MapEvents
+           $736A = Route16FuchsiaSpeechHouse_MapScripts
+           $73B5 = Route16FuchsiaSpeechHouse_MapEvents
+           $73DC = Route16Gate_MapScripts
+           $74D8 = Route16Gate_MapEvents
+           $750F = Route7SaffronGate_MapScripts
+           $75D9 = Route7SaffronGate_MapEvents
+           $7600 = Route17Route18Gate_MapScripts
+           $76AF = Route17Route18Gate_MapEvents
            $4010 = LakeOfRage_MapScripts.DummyScene0
            $4011 = LakeOfRage_MapScripts.DummyScene1
            $4012 = LakeOfRage_MapScripts.FlyPoint
@@ -13855,72 +13855,72 @@ ROM Bank #28:
            $6E7F = PicnickerTanyaBeatenText
            $6AD4 = TrainerPicnickerTanya.Script
            $6E8E = PicnickerTanyaAfterBattleText
-           $6EC5 = BeautyJuliaSeenText
-           $6EF2 = BeautyJuliaBeatenText
-           $6AE8 = TrainerBeautyJulia.Script
-           $6F01 = BeautyJuliaAfterBattleText
-           $6F32 = TwinsJoAndZoe1SeenText
-           $6F62 = TwinsJoAndZoe1BeatenText
+           $6EC5 = BeautyKELLIESeenText
+           $6EF2 = BeautyKELLIEBeatenText
+           $6AE8 = TrainerBeautyKELLIE.Script
+           $6F0B = BeautyKELLIEAfterBattleText
+           $6F2B = TwinsJoAndZoe1SeenText
+           $6F5B = TwinsJoAndZoe1BeatenText
            $6AFC = TrainerTwinsJoAndZoe1.Script
-           $6F70 = TwinsJoAndZoe1AfterBattleText
-           $6F91 = TwinsJoAndZoe2SeenText
-           $6FAF = TwinsJoAndZoe2BeatenText
+           $6F69 = TwinsJoAndZoe1AfterBattleText
+           $6F8A = TwinsJoAndZoe2SeenText
+           $6FA8 = TwinsJoAndZoe2BeatenText
            $6B10 = TrainerTwinsJoAndZoe2.Script
-           $6FC0 = TwinsJoAndZoe2AfterBattleText
+           $6FB9 = TwinsJoAndZoe2AfterBattleText
            $6B21 = CeladonGymStatue.Beaten
            $6B18 = CeladonGymStatue
            $6A6A = CeladonGymErikaScript
            $6AB4 = TrainerLassMichelle
            $6AC8 = TrainerPicnickerTanya
-           $6ADC = TrainerBeautyJulia
+           $6ADC = TrainerBeautyKELLIE
            $6AF0 = TrainerTwinsJoAndZoe1
            $6B04 = TrainerTwinsJoAndZoe2
-           $70DE = ChefText_Eatathon
-           $7129 = Fisher1Text_Snarfle
-           $713A = Fisher1Text_Concentration
-           $716A = Fisher2Text_GulpChew
-           $7178 = Fisher2Text_Quantity
-           $71AE = Fisher3Text_MunchMunch
-           $71BD = Fisher3Text_GoldenrodIsBest
-           $709A = CeladonCafeTeacher.HasCoinCase
-           $7201 = TeacherText_CrunchCrunch
-           $7212 = TeacherText_NoCoinCase
-           $7254 = TeacherText_KeepEating
-           $7278 = TeacherText_MoreChef
-           $7285 = EatathonContestPosterText
-           $70DB = CeladonCafeTrashcan.TrashEmpty
-           $70CD = CeladonCafeTrashcan.PackFull
-           $72E7 = FoundLeftoversText
-           $72F7 = NoRoomForLeftoversText
-           $70AD = EatathonContestPoster
-           $70B0 = CeladonCafeTrashcan
-           $7049 = CeladonCafeChef
-           $7051 = CeladonCafeFisher1
-           $7062 = CeladonCafeFisher2
-           $7073 = CeladonCafeFisher3
-           $7084 = CeladonCafeTeacher
-           $7379 = Route16FuchsiaSpeechHouseSuperNerdText
-           $7376 = Route16FuchsiaSpeechHouseBookshelf
-           $7373 = Route16FuchsiaSpeechHouseSuperNerdScript
-           $73E9 = Route16Gate_MapScripts.DummyScene
-           $7408 = Route16GateOfficerText
-           $73F3 = Route16GateBicycleCheck.NoBicycle
-           $7496 = Route16GateCannotPassText
-           $7405 = Route16GateCannotPassMovement
-           $73ED = Route16GateBicycleCheck
-           $73EA = Route16GateOfficerScript
-           $7526 = Route7SaffronGuardScript.ReturnedPart
-           $752C = Route7SaffronGuardPowerPlantText
-           $7592 = Route7SaffronGuardSeriousText
-           $7518 = Route7SaffronGuardScript
-           $760D = Route17Route18Gate_MapScripts.DummyScene
-           $762C = Route17Route18GateOfficerText
-           $7617 = Route17Route18GateBicycleCheck.NoBicycle
-           $764D = Route17Route18GateCannotPassText
-           $7629 = Route17Route18GateCannotPassMovement
-           $7611 = Route17Route18GateBicycleCheck
-           $760E = Route17Route18GateOfficerScript
-    SLACK: $0913 bytes
+           $70D7 = ChefText_Eatathon
+           $7122 = Fisher1Text_Snarfle
+           $7133 = Fisher1Text_Concentration
+           $7163 = Fisher2Text_GulpChew
+           $7171 = Fisher2Text_Quantity
+           $71A7 = Fisher3Text_MunchMunch
+           $71B6 = Fisher3Text_GoldenrodIsBest
+           $7093 = CeladonCafeTeacher.HasCoinCase
+           $71FA = TeacherText_CrunchCrunch
+           $720B = TeacherText_NoCoinCase
+           $724D = TeacherText_KeepEating
+           $7271 = TeacherText_MoreChef
+           $727E = EatathonContestPosterText
+           $70D4 = CeladonCafeTrashcan.TrashEmpty
+           $70C6 = CeladonCafeTrashcan.PackFull
+           $72E0 = FoundLeftoversText
+           $72F0 = NoRoomForLeftoversText
+           $70A6 = EatathonContestPoster
+           $70A9 = CeladonCafeTrashcan
+           $7042 = CeladonCafeChef
+           $704A = CeladonCafeFisher1
+           $705B = CeladonCafeFisher2
+           $706C = CeladonCafeFisher3
+           $707D = CeladonCafeTeacher
+           $7372 = Route16FuchsiaSpeechHouseSuperNerdText
+           $736F = Route16FuchsiaSpeechHouseBookshelf
+           $736C = Route16FuchsiaSpeechHouseSuperNerdScript
+           $73E2 = Route16Gate_MapScripts.DummyScene
+           $7401 = Route16GateOfficerText
+           $73EC = Route16GateBicycleCheck.NoBicycle
+           $748F = Route16GateCannotPassText
+           $73FE = Route16GateCannotPassMovement
+           $73E6 = Route16GateBicycleCheck
+           $73E3 = Route16GateOfficerScript
+           $751F = Route7SaffronGuardScript.ReturnedPart
+           $7525 = Route7SaffronGuardPowerPlantText
+           $758B = Route7SaffronGuardSeriousText
+           $7511 = Route7SaffronGuardScript
+           $7606 = Route17Route18Gate_MapScripts.DummyScene
+           $7625 = Route17Route18GateOfficerText
+           $7610 = Route17Route18GateBicycleCheck.NoBicycle
+           $7646 = Route17Route18GateCannotPassText
+           $7622 = Route17Route18GateCannotPassMovement
+           $760A = Route17Route18GateBicycleCheck
+           $7607 = Route17Route18GateOfficerScript
+    SLACK: $091A bytes
 
 ROM Bank #29:
   SECTION: $4000-$7281 ($3282 bytes) ["Map Scripts 8"]
@@ -14176,10 +14176,10 @@ ROM Bank #29:
            $5C32 = BeautyCassieBeatenText
            $5A83 = TrainerBeautyCassie.Script
            $5C43 = BeautyCassieAfterBattleText
-           $5CA6 = GuitaristClydeSeenText
-           $5CE4 = GuitaristClydeBeatenText
-           $5A97 = TrainerGuitaristClyde.Script
-           $5AA5 = TrainerGuitaristClyde.mobile
+           $5CA6 = GuitaristQUISTSeenText
+           $5CE4 = GuitaristQUISTBeatenText
+           $5A97 = TrainerGuitaristQUIST.Script
+           $5AA5 = TrainerGuitaristQUIST.mobile
            $5D65 = UnknownText_0x75d65
            $5CFE = UnknownText_0x75cfe
            $5DA4 = FastShipBedText1
@@ -14194,7 +14194,7 @@ ROM Bank #29:
            $5A4F = TrainerFirebreatherLyle
            $5A63 = TrainerBugCatcherKen
            $5A77 = TrainerBeautyCassie
-           $5A8B = TrainerGuitaristClyde
+           $5A8B = TrainerGuitaristQUIST
            $5EB5 = SSAquaCaptain.LaterTrip
            $6012 = SSAquaCaptainExhaustingText
            $6064 = SSAquaCaptainHowDoYouLikeText

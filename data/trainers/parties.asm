@@ -1164,10 +1164,10 @@ BeautyGroup:
 	db -1 ; end
 
 	; BEAUTY (14)
-	db "JULIA@", TRAINERTYPE_NORMAL
-	db 32, PARAS
-	db 32, EXEGGCUTE
-	db 35, PARASECT
+	db "KELLIE@", TRAINERTYPE_NORMAL
+	db 32, BULBASAUR
+	db 32, CHIKORITA
+	db 35, SUNFLORA
 	db -1 ; end
 
 	; BEAUTY (15)
@@ -2298,8 +2298,8 @@ Rival2Group:
 
 GuitaristGroup:
 	; GUITARIST (1)
-	db "CLYDE@", TRAINERTYPE_NORMAL
-	db 34, ELECTABUZZ
+	db "QUIST@", TRAINERTYPE_NORMAL
+	db 38, ARCANINE
 	db -1 ; end
 
 	; GUITARIST (2)

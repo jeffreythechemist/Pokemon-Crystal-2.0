@@ -26,7 +26,7 @@ CeladonGymErikaScript:
 	setevent EVENT_BEAT_ERIKA
 	setevent EVENT_BEAT_LASS_MICHELLE
 	setevent EVENT_BEAT_PICNICKER_TANYA
-	setevent EVENT_BEAT_BEAUTY_JULIA
+	setevent EVENT_BEAT_BEAUTY_KELLIE
 	setevent EVENT_BEAT_TWINS_JO_AND_ZOE
 	opentext
 	writetext PlayerReceivedRainbowBadgeText
@@ -69,13 +69,13 @@ TrainerPicnickerTanya:
 	closetext
 	end
 
-TrainerBeautyJulia:
-	trainer BEAUTY, JULIA, EVENT_BEAT_BEAUTY_JULIA, BeautyJuliaSeenText, BeautyJuliaBeatenText, 0, .Script
+TrainerBeautyKELLIE:
+	trainer BEAUTY, KELLIE, EVENT_BEAT_BEAUTY_KELLIE, BeautyKELLIESeenText, BeautyKELLIEBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BeautyJuliaAfterBattleText
+	writetext BeautyKELLIEAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -220,20 +220,20 @@ PicnickerTanyaAfterBattleText:
 	line "win!"
 	done
 
-BeautyJuliaSeenText:
+BeautyKELLIESeenText:
 	text "Were you looking"
 	line "at these flowers"
 	cont "or at me?"
 	done
 
-BeautyJuliaBeatenText:
-	text "How annoying!"
+BeautyKELLIEBeatenText:
+	text "I don't feel"
+	line "so good...."
 	done
 
-BeautyJuliaAfterBattleText:
-	text "How do I go about"
-	line "becoming ladylike"
-	cont "like ERIKA?"
+BeautyKELLIEAfterBattleText:
+	text "My husband made"
+	line "this rom hack!"
 	done
 
 TwinsJoAndZoe1SeenText:
@@ -282,6 +282,6 @@ CeladonGym_MapEvents:
 	object_event  5,  3, SPRITE_ERIKA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, CeladonGymErikaScript, -1
 	object_event  7,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerLassMichelle, -1
 	object_event  2,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 2, TrainerPicnickerTanya, -1
-	object_event  3,  5, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyJulia, -1
+	object_event  3,  5, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerBeautyKELLIE, -1
 	object_event  4, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe1, -1
 	object_event  5, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerTwinsJoAndZoe2, -1

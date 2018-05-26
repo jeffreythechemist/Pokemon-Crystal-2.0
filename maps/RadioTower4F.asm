@@ -86,13 +86,13 @@ TrainerGruntF4:
 	closetext
 	end
 
-TrainerScientistRich:
-	trainer SCIENTIST, RICH, EVENT_BEAT_SCIENTIST_RICH, ScientistRichSeenText, ScientistRichBeatenText, 0, .Script
+TrainerScientistHOLDEN:
+	trainer SCIENTIST, HOLDEN, EVENT_BEAT_SCIENTIST_HOLDEN, ScientistHOLDENSeenText, ScientistHOLDENBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext ScientistRichAfterBattleText
+	writetext ScientistHOLDENAfterBattleText
 	waitbutton
 	closetext
 	end
@@ -214,22 +214,18 @@ GruntF4AfterBattleText:
 	line "#MON?"
 	done
 
-ScientistRichSeenText:
-	text "Most excellent."
-
-	para "This RADIO TOWER"
-	line "will fulfill our"
-	cont "grand design."
+ScientistHOLDENSeenText:
+	text "You trying to"
+	line "catch these"
+	cont "hands, son?"
 	done
 
-ScientistRichBeatenText:
-	text "Hmmm…"
-
-	para "All grand plans"
-	line "come with snags."
+ScientistHOLDENBeatenText:
+	text "That battle was"
+	line "fire. Respect."
 	done
 
-ScientistRichAfterBattleText:
+ScientistHOLDENAfterBattleText:
 	text "Do you honestly"
 	line "believe you can"
 	cont "stop TEAM ROCKET?"
@@ -265,4 +261,4 @@ RadioTower4F_MapEvents:
 	object_event  5,  6, SPRITE_ROCKET, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM10, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 14,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_LEFT, 2, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerExecutivem2, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	object_event 12,  4, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 1, TrainerGruntF4, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event  4,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerScientistRich, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	object_event  4,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerScientistHOLDEN, EVENT_RADIO_TOWER_ROCKET_TAKEOVER

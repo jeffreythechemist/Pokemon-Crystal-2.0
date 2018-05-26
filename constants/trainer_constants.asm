@@ -102,7 +102,7 @@ KRIS EQU __enum__
 	const MITCH
 	const JED
 	const MARC
-	const RICH
+	const HOLDEN
 
 	trainerclass ERIKA ; 15
 	const ERIKA1
@@ -251,7 +251,7 @@ KRIS EQU __enum__
 	const ANGELICA
 	const KENDRA
 	const VERONICA
-	const JULIA
+	const KELLIE
 	const THERESA
 	const VALERIE
 	const OLIVIA
@@ -457,7 +457,7 @@ KRIS EQU __enum__
 	const RIVAL2_2_TOTODILE
 
 	trainerclass GUITARIST ; 2b
-	const CLYDE
+	const QUIST
 	const VINCENT
 
 	trainerclass HIKER ; 2c

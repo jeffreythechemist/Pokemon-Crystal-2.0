@@ -14,7 +14,7 @@ Route29_MapScripts:
 	scene_script .DummyScene1 ; SCENE_ROUTE29_CATCH_TUTORIAL
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .Tuscany
+	dbw MAPCALLBACK_OBJECTS, .Tuscany
 
 .DummyScene0:
 	end
@@ -31,8 +31,6 @@ Route29_MapScripts:
 	return
 
 .DoesTuscanyAppear:
-	checkcode VAR_WEEKDAY
-	ifnotequal TUESDAY, .TuscanyDisappears
 	appear ROUTE29_TUSCANY
 	return
 

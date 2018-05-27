@@ -13,20 +13,14 @@ BlackthornCity_MapScripts:
 	db 0 ; scene scripts
 
 	db 2 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .FlyPoint
-	callback MAPCALLBACK_OBJECTS, .Santos
+	dbw MAPCALLBACK_NEWMAP, .FlyPoint
+	dbw MAPCALLBACK_OBJECTS, .Santos
 
 .FlyPoint:
 	setflag ENGINE_FLYPOINT_BLACKTHORN
 	return
 
 .Santos:
-	checkcode VAR_WEEKDAY
-	ifequal SATURDAY, .SantosAppears
-	disappear BLACKTHORNCITY_SANTOS
-	return
-
-.SantosAppears:
 	appear BLACKTHORNCITY_SANTOS
 	return
 

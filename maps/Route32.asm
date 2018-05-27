@@ -21,7 +21,7 @@ Route32_MapScripts:
 	scene_script .DummyScene2 ; SCENE_ROUTE32_NOTHING
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .Frieda
+	dbw MAPCALLBACK_OBJECTS, .Frieda
 
 .DummyScene0:
 	end
@@ -33,12 +33,6 @@ Route32_MapScripts:
 	end
 
 .Frieda:
-	checkcode VAR_WEEKDAY
-	ifequal FRIDAY, .FriedaAppears
-	disappear ROUTE32_FRIEDA
-	return
-
-.FriedaAppears:
 	appear ROUTE32_FRIEDA
 	return
 

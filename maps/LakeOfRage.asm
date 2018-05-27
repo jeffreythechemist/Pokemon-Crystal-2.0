@@ -18,8 +18,8 @@ LakeOfRage_MapScripts:
 	scene_script .DummyScene1 ; unusable
 
 	db 2 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .FlyPoint
-	callback MAPCALLBACK_OBJECTS, .Wesley
+	dbw MAPCALLBACK_NEWMAP, .FlyPoint
+	dbw MAPCALLBACK_OBJECTS, .Wesley
 
 .DummyScene0:
 	end
@@ -32,12 +32,6 @@ LakeOfRage_MapScripts:
 	return
 
 .Wesley:
-	checkcode VAR_WEEKDAY
-	ifequal WEDNESDAY, .WesleyAppears
-	disappear LAKEOFRAGE_WESLEY
-	return
-
-.WesleyAppears:
 	appear LAKEOFRAGE_WESLEY
 	return
 

@@ -15,7 +15,7 @@ Route36_MapScripts:
 	scene_script .DummyScene1 ; SCENE_ROUTE36_SUICUNE
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .ArthurCallback
+	dbw MAPCALLBACK_OBJECTS, .Arthur
 
 .DummyScene0:
 	end
@@ -23,13 +23,7 @@ Route36_MapScripts:
 .DummyScene1:
 	end
 
-.ArthurCallback:
-	checkcode VAR_WEEKDAY
-	ifequal THURSDAY, .ArthurAppears
-	disappear ROUTE36_ARTHUR
-	return
-
-.ArthurAppears:
+.Arthur:
 	appear ROUTE36_ARTHUR
 	return
 

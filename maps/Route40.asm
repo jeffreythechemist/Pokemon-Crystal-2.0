@@ -16,16 +16,9 @@ Route40_MapScripts:
 	db 0 ; scene scripts
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .MonicaCallback
+	dbw MAPCALLBACK_OBJECTS, .Monica
 
-.MonicaCallback:
-	clearevent EVENT_BATTLE_TOWER_OUTSIDE_SAILOR
-	checkcode VAR_WEEKDAY
-	ifequal MONDAY, .MonicaAppears
-	disappear ROUTE40_MONICA
-	return
-
-.MonicaAppears:
+.Monica:
 	appear ROUTE40_MONICA
 	return
 

@@ -11,15 +11,9 @@ Route37_MapScripts:
 	db 0 ; scene scripts
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .Sunny
+	dbw MAPCALLBACK_OBJECTS, .Sunny
 
 .Sunny:
-	checkcode VAR_WEEKDAY
-	ifequal SUNDAY, .SunnyAppears
-	disappear ROUTE37_SUNNY
-	return
-
-.SunnyAppears:
 	appear ROUTE37_SUNNY
 	return
 

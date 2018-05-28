@@ -2081,7 +2081,7 @@ ChikoritaEvosAttacks:
 	db 15, POISONPOWDER
 	db 20, SYNTHESIS
 	db 25, BODY_SLAM
-	db 30, LIGHT_SCREEN
+	db 30, GIGA_DRAIN
 	db 35, SAFEGUARD
 	db 40, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -2098,8 +2098,8 @@ BayleefEvosAttacks:
 	db 15, POISONPOWDER
 	db 23, SYNTHESIS
 	db 31, BODY_SLAM
-	db 35, LIGHT_SCREEN
-	db 40, SAFEGUARD
+	db 35, GROWTH
+	db 40, GIGA_DRAIN
 	db 45, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -2114,9 +2114,9 @@ MeganiumEvosAttacks:
 	db 15, POISONPOWDER
 	db 23, SYNTHESIS
 	db 31, BODY_SLAM
-	db 40, LIGHT_SCREEN
-	db 45, SAFEGUARD
-	db 48, SOLARBEAM
+	db 35, GROWTH
+	db 40, GIGA_DRAIN
+	db 45, SOLARBEAM
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
@@ -2905,7 +2905,7 @@ HeracrossEvosAttacks:
 	db 12, ENDURE
 	db 19, FURY_ATTACK
 	db 27, COUNTER
-	db 35, TAKE_DOWN
+	db 35, SWORDS_DANCE
 	db 44, CROSS_CHOP
 	db 54, MEGAHORN
 	db 0 ; no more level-up moves

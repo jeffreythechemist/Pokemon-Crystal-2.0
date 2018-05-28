@@ -364,14 +364,15 @@ NationalParkYoungster2Text:
 	done
 
 NationalParkTeacher2Text:
-	text "I take walks in"
-	line "the PARK, but I"
+	text "I could have"
+	line "sworn yesterday"
 
-	para "never go into the"
-	line "grass."
+	para "I saw totodile"
+	line "in the park."
 
-	para "Trainers always"
-	line "want to battle…"
+	para "But when I went"
+	line "back today I saw"
+	cont "cyndaquil...."
 	done
 
 NationalParkPersianText:

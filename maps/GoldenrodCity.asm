@@ -298,11 +298,14 @@ GoldenrodCityYoungster1Text:
 	done
 
 GoldenrodCityCooltrainerF1Text:
-	text "Is that man in"
-	line "black dressed up"
+	text "Earlier today I"
+	line "went to the dept"
 
-	para "like a TEAM ROCKET"
-	line "member? How silly!"
+	para "store and bought a"
+	line "moon stone, then"
+
+	para "my eevee evolved"
+	line "into Umbreon!"
 	done
 
 GoldenrodCityCooltrainerF1Text_ClearedRadioTower:

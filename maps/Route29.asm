@@ -314,7 +314,7 @@ Route29TeacherText:
 
 Route29FisherText:
 	text "I heard there are"
-	line "18 rare #MON on"
+	line "15 rare #MON on"
 
 	para "the other side of"
 	line "this gate!"

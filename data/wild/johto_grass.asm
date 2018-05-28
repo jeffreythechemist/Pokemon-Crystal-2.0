@@ -335,7 +335,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 13, FARFETCH_D
 	db 10, CATERPIE
 	db 10, WEEDLE
-	db 10, YANMA
+	db 10, CYNDAQUIL
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
@@ -343,7 +343,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 13, TANGELA
 	db 10, CATERPIE
 	db 10, WEEDLE
-	db 10, WEEDLE
+	db 10, TOTODILE
 	; nite
 	db 12, PSYDUCK
 	db 13, HOOTHOOT
@@ -351,7 +351,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 15, HOOTHOOT
 	db 10, VENONAT
 	db 12, VENONAT
-	db 12, VENONAT
+	db 12, CHIKORITA
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1598,29 +1598,29 @@ JohtoGrassWildMons: ; 0x2a5e9
 	map_id ROUTE_46
 	db 12 percent, 12 percent, 12 percent ; encounter rates: morn/day/nite
 	; morn
-	db 5, DRATINI
-	db 5, PICHU
-	db 5, BULBASAUR
-	db 5, SQUIRTLE
-	db 5, CHARMANDER
-	db 5, ELEKID
-	db 5, MAREEP
+	db 4, DRATINI
+	db 4, PICHU
+	db 4, BULBASAUR
+	db 4, SQUIRTLE
+	db 4, CHARMANDER
+	db 4, ELEKID
+	db 4, MAREEP
 	; day
-	db 5, DRATINI
-	db 5, GROWLITHE
-	db 5, CHIKORITA
-	db 5, TOTODILE
-	db 5, CYNDAQUIL
-	db 5, PONYTA
-	db 5, SHELLDER
+	db 4, DRATINI
+	db 4, GROWLITHE
+	db 4, BULBASAUR
+	db 4, SQUIRTLE
+	db 4, CHARMANDER
+	db 4, PONYTA
+	db 4, SHELLDER
 	; nite
-	db 5, HERACROSS
-	db 5, POLIWAG
-	db 5, MURKROW
-	db 5, LARVITAR
-	db 5, LARVITAR
-	db 5, HOUNDOUR
-	db 5, HOUNDOUR
+	db 4, HERACROSS
+	db 4, POLIWAG
+	db 4, MURKROW
+	db 4, LARVITAR
+	db 4, LARVITAR
+	db 4, HOUNDOUR
+	db 4, HOUNDOUR
 
 	map_id SILVER_CAVE_OUTSIDE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

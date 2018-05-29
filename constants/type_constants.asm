@@ -4,9 +4,8 @@
 ; - PokedexTypeSearchStrings (see data/types/search_strings.asm)
 ; - TypeMatchups (see data/types/type_matchups.asm)
 ; - TypeBoostItems (see data/types/type_boost_items.asm)
-	const_def
 
-PHYSICAL EQU const_value
+	const_def
 	const NORMAL
 	const FIGHTING
 	const FLYING
@@ -15,7 +14,7 @@ PHYSICAL EQU const_value
 	const ROCK
 	const BIRD
 	const BUG
-	const DARK
+	const GHOST
 	const STEEL
 
 UNUSED_TYPES EQU const_value
@@ -31,7 +30,6 @@ UNUSED_TYPES EQU const_value
 	const CURSE_T
 UNUSED_TYPES_END EQU const_value
 
-SPECIAL EQU const_value
 	const FIRE
 	const WATER
 	const GRASS
@@ -39,7 +37,12 @@ SPECIAL EQU const_value
 	const PSYCHIC
 	const ICE
 	const DRAGON
-	const GHOST
+	const DARK
 TYPES_END EQU const_value
+
+MOVE_TYPE_MASK EQU %00111111
+PHYSICAL EQU %01000000
+SPECIAL  EQU %10000000
+STATUS   EQU %11000000
 
 NUM_TYPES EQU TYPES_END + UNUSED_TYPES - UNUSED_TYPES_END

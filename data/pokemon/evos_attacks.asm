@@ -540,8 +540,8 @@ ZubatEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEECH_LIFE
 	db 6, SUPERSONIC
-	db 12, BITE
-	db 19, CONFUSE_RAY
+	db 10, BITE
+	db 15, CONFUSE_RAY
 	db 27, WING_ATTACK
 	db 36, SLUDGE_BOMB
 	db 46, HAZE
@@ -555,9 +555,9 @@ GolbatEvosAttacks:
 	db 1, SUPERSONIC
 	db 6, SUPERSONIC
 	db 12, BITE
-	db 19, CONFUSE_RAY
-	db 30, WING_ATTACK
-	db 42, SLUDGE_BOMB
+	db 18, CONFUSE_RAY
+	db 24, WING_ATTACK
+	db 31, SLUDGE_BOMB
 	db 55, HAZE
 	db 0 ; no more level-up moves
 
@@ -2096,11 +2096,11 @@ BayleefEvosAttacks:
 	db 8, RAZOR_LEAF
 	db 12, LEECH_SEED
 	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 35, GROWTH
-	db 40, GIGA_DRAIN
-	db 45, SOLARBEAM
+	db 20, SYNTHESIS
+	db 25, BODY_SLAM
+	db 30, GROWTH
+	db 35, GIGA_DRAIN
+	db 40, SOLARBEAM
 	db 0 ; no more level-up moves
 
 MeganiumEvosAttacks:
@@ -2113,10 +2113,10 @@ MeganiumEvosAttacks:
 	db 12, REFLECT
 	db 15, POISONPOWDER
 	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 35, GROWTH
-	db 40, GIGA_DRAIN
-	db 45, SOLARBEAM
+	db 25, BODY_SLAM
+	db 30, GROWTH
+	db 35, GIGA_DRAIN
+	db 40, SOLARBEAM
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
@@ -2336,8 +2336,8 @@ CrobatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
-	db 36, SLUDGE_BOMB
-	db 42, HAZE
+	db 31, SLUDGE_BOMB
+	db 40, HAZE
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:

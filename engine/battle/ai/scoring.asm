@@ -196,6 +196,7 @@ AI_Types: ; 38635
 	push de
 	push bc
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and MOVE_TYPE_MASK
 	ld d, a
 	ld hl, wEnemyMonMoves
 	ld b, wEnemyMonMovesEnd - wEnemyMonMoves + 1
@@ -210,6 +211,7 @@ AI_Types: ; 38635
 
 	call AIGetEnemyMove
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and MOVE_TYPE_MASK
 	cp d
 	jr z, .checkmove2
 	ld a, [wEnemyMoveStruct + MOVE_POWER]
@@ -1167,16 +1169,33 @@ AI_Smart_SpDefenseUp2: ; 38aed
 	jr nc, .asm_38b10
 
 ; 80% chance to greatly encourage this move if
-; enemy's Special Defense level is lower than +2, and the player is of a special type.
+; enemy's Special Defense level is lower than +2,
+; and the player's Pokémon is Special-oriented.
 	cp $9
 	ret nc
 
-	ld a, [wBattleMonType1]
-	cp SPECIAL
+	push hl
+; Get the pointer for the player's Pokémon's base Attack
+	ld a, [wBattleMonSpecies]
+	ld hl, BaseData + BASE_ATK
+	ld bc, BASE_DATA_SIZE
+	call AddNTimes
+; Get the Pokémon's base Attack
+	ld a, BANK(BaseData)
+	call GetFarByte
+	ld d, a
+; Get the pointer for the player's Pokémon's base Special Attack
+	ld bc, BASE_SAT - BASE_ATK
+	add hl, bc
+; Get the Pokémon's base Special Attack
+	ld a, BANK(BaseData)
+	call GetFarByte
+	pop hl
+; If its base Attack is greater than its base Special Attack,
+; don't encourage this move.
+	cp d
 	jr nc, .asm_38b09
-	ld a, [wBattleMonType2]
-	cp SPECIAL
-	ret c
+	ret
 
 .asm_38b09
 	call AI_80_20
@@ -1481,6 +1500,7 @@ AI_Smart_Encore: ; 38c3b
 
 	push hl
 	ld a, [wEnemyMoveStruct + MOVE_TYPE]
+	and MOVE_TYPE_MASK
 	ld hl, wEnemyMonType1
 	predef CheckTypeMatchup
 
@@ -1944,11 +1964,6 @@ AI_Smart_Curse: ; 38e5c
 	ld a, [wBattleMonType1]
 	cp GHOST
 	jr z, .asm_38e92
-	cp SPECIAL
-	ret nc
-	ld a, [wBattleMonType2]
-	cp SPECIAL
-	ret nc
 	call AI_80_20
 	ret c
 	dec [hl]

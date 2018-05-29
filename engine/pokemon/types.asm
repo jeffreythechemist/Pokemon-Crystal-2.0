@@ -53,6 +53,7 @@ PrintMoveType: ; 5093a
 	ld a, BANK(Moves)
 	call FarCopyBytes
 	ld a, [wStringBuffer1 + MOVE_TYPE]
+	and MOVE_TYPE_MASK
 	pop hl
 
 	ld b, a

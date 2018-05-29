@@ -25,6 +25,7 @@ BattleCommand_Conversion: ; 3707f
 	dec a
 	ld hl, Moves + MOVE_TYPE
 	call GetMoveAttr
+	and MOVE_TYPE_MASK
 	ld [de], a
 	inc de
 	pop bc

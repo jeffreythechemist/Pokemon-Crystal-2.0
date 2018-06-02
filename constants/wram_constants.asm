@@ -28,9 +28,9 @@ GAMETIMERPAUSE_MOBILE_7_F     EQU 7
 	const BATTLE_SCENE   ; 7
 
 ; wOptions:: (bits 0-2) ; cfcc
-TEXT_DELAY_FAST EQU 1
-TEXT_DELAY_MED  EQU 3
-TEXT_DELAY_SLOW EQU 5
+TEXT_DELAY_SLOW       EQU 3
+TEXT_DELAY_MED        EQU 1
+TEXT_DELAY_INSTANT    EQU 0
 
 ; wTextBoxFrame:: ; cfce
 	const_def
@@ -46,7 +46,7 @@ NUM_FRAMES EQU const_value
 
 ; wTextBoxFlags:: ; cfcf
 	const_def
-	const FAST_TEXT_DELAY_F ; 0
+	const INSTANT_TEXT_DELAY_F ; 0
 	const NO_TEXT_DELAY_F   ; 1
 
 ; wGBPrinter:: ; cfd0

@@ -329,29 +329,29 @@ JohtoGrassWildMons: ; 0x2a5e9
 	map_id NATIONAL_PARK
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
+	db 14, NIDORAN_M
+	db 14, NIDORAN_F
 	db 14, LEDYBA
 	db 13, FARFETCH_D
 	db 10, CATERPIE
-	db 10, WEEDLE
+	db 12, EXEGGCUTE
 	db 10, CYNDAQUIL
 	; day
-	db 12, NIDORAN_F
-	db 12, NIDORAN_M
+	db 14, NIDORAN_F
+	db 14, NIDORAN_M
 	db 14, SUNKERN
-	db 13, TANGELA
+	db 14, TANGELA
 	db 10, CATERPIE
-	db 10, WEEDLE
+	db 10, EXEGGCUTE
 	db 10, TOTODILE
 	; nite
-	db 12, PSYDUCK
+	db 14, PSYDUCK
 	db 13, HOOTHOOT
 	db 14, SPINARAK
 	db 15, HOOTHOOT
-	db 10, VENONAT
 	db 12, VENONAT
-	db 12, CHIKORITA
+	db 14, VENONAT
+	db 10, CHIKORITA
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -566,8 +566,8 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 7, ODDISH
 	db 7, PSYDUCK
 	db 7, HOOTHOOT
-	db 6, PARAS
-	db 6, TANGELA
+	db 6, PIKACHU
+	db 6, PIKACHU
 
 	map_id MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1237,7 +1237,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, HOPPIP
 	; nite
 	db 3, SPINARAK
-	db 3, HOOTHOOT
+	db 3, POLIWAG
 	db 4, POLIWAG
 	db 4, HOOTHOOT
 	db 3, ZUBAT
@@ -1329,16 +1329,16 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, SNUBBULL
-	db 11, RATTATA
-	db 12, PIDGEY
+	db 12, EEVEE
+	db 14, EEVEE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
 	db 10, DITTO
 	; day
 	db 10, SNUBBULL
-	db 11, RATTATA
-	db 12, PIDGEY
+	db 12, EEVEE
+	db 14, EEVEE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1427,9 +1427,9 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; nite
 	db 13, SPINARAK
 	db 14, STANTLER
-	db 15, HOOTHOOT
+	db 15, PORYGON
 	db 16, STANTLER
-	db 15, NOCTOWL
+	db 15, PORYGON
 	db 15, ARIADOS
 	db 15, ARIADOS
 
@@ -1461,54 +1461,54 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 16, MEOWTH
 
 	map_id ROUTE_39
-	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 18, KANGASKHAN
+	db 18, RATICATE
+	db 18, MAGNEMITE
+	db 18, PIDGEOTTO
+	db 17, MILTANK
+	db 17, TAUROS
+	db 19, TAUROS
 	; day
-	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, PIDGEOTTO
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 18, KANGASKHAN
+	db 18, RATICATE
+	db 18, MAGNEMITE
+	db 18, PIDGEOTTO
+	db 17, MILTANK
+	db 17, TAUROS
+	db 19, TAUROS
 	; nite
-	db 16, MEOWTH
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, NOCTOWL
 	db 18, MEOWTH
-	db 18, MEOWTH
-	db 18, MEOWTH
+	db 18, RATICATE
+	db 18, MAGNEMITE
+	db 18, NOCTOWL
+	db 20, PERSIAN
+	db 20, FLAAFFY
+	db 20, ELECTABUZZ
 
 	map_id ROUTE_42
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
+	db 15, GLIGAR
+	db 16, GLIGAR
 	db 15, ARBOK
 	db 16, FEAROW
 	db 16, FEAROW
 	; day
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
+	db 15, GLIGAR
+	db 16, GLIGAR
 	db 15, ARBOK
 	db 16, FEAROW
 	db 16, FEAROW
 	; nite
 	db 13, RATTATA
-	db 14, ZUBAT
-	db 15, RATICATE
+	db 15, GLIGAR
+	db 16, GLIGAR
 	db 16, GOLBAT
 	db 15, MARILL
 	db 16, GOLBAT
@@ -1521,16 +1521,16 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
+	db 17, SLUGMA
+	db 17, SLUGMA
 	db 17, FURRET
 	; day
 	db 15, SENTRET
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
 	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
+	db 17, SLUGMA
+	db 17, SLUGMA
 	db 17, FURRET
 	; nite
 	db 15, VENONAT
@@ -1615,7 +1615,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, SHELLDER
 	; nite
 	db 4, HERACROSS
-	db 4, POLIWAG
+	db 4, SKARMORY
 	db 4, MURKROW
 	db 4, LARVITAR
 	db 4, LARVITAR

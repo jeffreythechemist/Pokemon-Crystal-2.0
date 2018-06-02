@@ -2,9 +2,9 @@ PrintLetterDelay:: ; 313d
 ; Wait before printing the next letter.
 
 ; The text speed setting in wOptions is actually a frame count:
-; 	fast: 1 frame
-; 	mid:  3 frames
-; 	slow: 5 frames
+; 	instant: 0 frames
+; 	mid:     1 frame
+; 	slow:    3 frames
 
 ; wTextBoxFlags[!0] and A or B override text speed with a one-frame delay.
 ; wOptions[4] and wTextBoxFlags[!1] disable the delay.
@@ -30,18 +30,18 @@ PrintLetterDelay:: ; 313d
 ;	ld a, 1
 	ld [hl], a
 
-; force fast scroll?
+; force instant scroll?
 	ld a, [wTextBoxFlags]
-	bit FAST_TEXT_DELAY_F, a
-	jr z, .fast
+	bit INSTANT_TEXT_DELAY_F, a
+	jr z, .instant
 
 ; text speed
 	ld a, [wOptions]
 	and %111
 	jr .updatedelay
 
-.fast
-	ld a, TEXT_DELAY_FAST
+.instant
+	ld a, TEXT_DELAY_INSTANT
 
 .updatedelay
 	ld [wTextDelayFrames], a

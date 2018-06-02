@@ -1063,7 +1063,7 @@ RapidashEvosAttacks:
 
 SlowpokeEvosAttacks:
 	db EVOLVE_LEVEL, 37, SLOWBRO
-	db EVOLVE_TRADE, KINGS_ROCK, SLOWKING
+	db EVOLVE_ITEM, KINGS_ROCK, SLOWKING
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE
@@ -1287,7 +1287,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, STEELIX
+	db EVOLVE_ITEM, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
@@ -1597,7 +1597,7 @@ HorseaEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
-	db EVOLVE_TRADE, DRAGON_SCALE, KINGDRA
+	db EVOLVE_ITEM, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, SMOKESCREEN
@@ -1679,7 +1679,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, SCIZOR
+	db EVOLVE_ITEM, METAL_COAT, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
@@ -1867,7 +1867,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
-	db EVOLVE_TRADE, UP_GRADE, PORYGON2
+	db EVOLVE_ITEM, UP_GRADE, PORYGON2
 	db 0 ; no more evolutions
 	db 1, CONVERSION2
 	db 1, TACKLE
@@ -1876,9 +1876,9 @@ PorygonEvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, SHARPEN
-	db 32, LOCK_ON
-	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 28, LOCK_ON
+	db 32, TRI_ATTACK
+	db 36, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 OmanyteEvosAttacks:
@@ -2465,8 +2465,8 @@ FlaaffyEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
-	db 36, LIGHT_SCREEN
+	db 24, THUNDERBOLT
+	db 28, LIGHT_SCREEN
 	db 45, THUNDER
 	db 0 ; no more level-up moves
 
@@ -2480,8 +2480,8 @@ AmpharosEvosAttacks:
 	db 18, THUNDER_WAVE
 	db 27, COTTON_SPORE
 	db 30, THUNDERPUNCH
-	db 42, LIGHT_SCREEN
-	db 57, THUNDER
+	db 42, BODY_SLAM
+	db 48, THUNDER
 	db 0 ; no more level-up moves
 
 BellossomEvosAttacks:
@@ -3151,9 +3151,9 @@ Porygon2EvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, DEFENSE_CURL
-	db 32, LOCK_ON
-	db 36, TRI_ATTACK
-	db 44, ZAP_CANNON
+	db 28, LOCK_ON
+	db 32, TRI_ATTACK
+	db 36, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 StantlerEvosAttacks:

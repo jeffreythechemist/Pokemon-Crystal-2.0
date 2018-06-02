@@ -346,10 +346,8 @@ endr
 	ld e, a
 	ld d, [hl]
 	pop hl
-
 	call GetIconBank
 	call GetGFXUnlessMobile
-
 	pop hl
 	ret
 ; 8ea3f

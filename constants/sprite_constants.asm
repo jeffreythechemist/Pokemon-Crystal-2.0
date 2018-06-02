@@ -133,7 +133,7 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_EKANS ; 96
 	const SPRITE_PARAS ; 97
 	const SPRITE_TENTACOOL ; 98
-	const SPRITE_TAUROS ; 99
+	const SPRITE_MILTANK ; 99
 	const SPRITE_MACHOP ; 9a
 	const SPRITE_VOLTORB ; 9b
 	const SPRITE_LAPRAS ; 9c
@@ -143,6 +143,9 @@ SPRITE_POKEMON EQU const_value
 	const SPRITE_GYARADOS ; a0
 	const SPRITE_LUGIA ; a1
 	const SPRITE_HO_OH ; a2
+	const SPRITE_FARFETCH_D
+	const SPRITE_MURKOW
+	const SPRIE_MEOWTH
 
 ; special GetMonSprite values (see engine/overworld/overworld.asm)
 	const_def $e0

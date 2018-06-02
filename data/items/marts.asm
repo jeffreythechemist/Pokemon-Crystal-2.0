@@ -117,7 +117,7 @@ MartGoldenrod2F2: ; 16121
 	db REVIVE
 	db FULL_HEAL
 	db POKE_DOLL
-	db FLOWER_MAIL
+	db METAL_COAT
 	db -1 ; end
 ; 1612b
 

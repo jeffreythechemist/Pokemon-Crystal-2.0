@@ -60,7 +60,7 @@ MoveTutorScript:
 	writetext UnknownText_0x199090
 	yesorno
 	iffalse .Refused2
-	checkcoins 4000
+	checkcoins 800
 	ifequal HAVE_LESS, .NotEnoughMoney
 	writetext UnknownText_0x1990ce
 	loadmenu .MoveMenuHeader
@@ -121,7 +121,7 @@ MoveTutorScript:
 .TeachMove:
 	writetext UnknownText_0x19913a
 	buttonsound
-	takecoins 4000
+	takecoins 800
 	waitsfx
 	playsound SFX_TRANSACTION
 	special DisplayCoinCaseBalance
@@ -503,7 +503,7 @@ UnknownText_0x199042:
 
 UnknownText_0x199090:
 	text "It will cost you"
-	line "4000 coins. Okay?"
+	line "800 coins. Okay?"
 	done
 
 UnknownText_0x1990b4:

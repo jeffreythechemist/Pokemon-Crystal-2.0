@@ -2,7 +2,7 @@ SpriteMons: ; 14495
 ; entries correspond to SPRITE_* constants past SPRITE_POKEMON
 	db UNOWN
 	db GEODUDE
-	db GROWLITHE
+	db MEOWTH
 	db WEEDLE
 	db SHELLDER
 	db ODDISH
@@ -22,15 +22,15 @@ SpriteMons: ; 14495
 	db BULBASAUR
 	db JIGGLYPUFF
 	db GRIMER
-	db EKANS
+	db DRATINI
 	db PARAS
 	db TENTACOOL
-	db TAUROS
-	db MACHOP
+	db MILTANK
+	db MACHOKE
 	db VOLTORB
 	db LAPRAS
 	db RHYDON
-	db MOLTRES
+	db MURKROW
 	db SNORLAX
 	db GYARADOS
 	db LUGIA

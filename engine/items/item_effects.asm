@@ -157,7 +157,7 @@ ItemEffects: ; e73c
 	dw NoEffect            ; SCOPE_LENS
 	dw NoEffect            ; ITEM_8D
 	dw NoEffect            ; ITEM_8E
-	dw NoEffect            ; METAL_COAT
+	dw EvoStoneEffect      ; METAL_COAT
 	dw NoEffect            ; DRAGON_FANG
 	dw NoEffect            ; ITEM_91
 	dw NoEffect            ; LEFTOVERS

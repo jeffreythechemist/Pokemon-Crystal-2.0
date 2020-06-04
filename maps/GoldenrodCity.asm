@@ -299,13 +299,13 @@ GoldenrodCityYoungster1Text:
 
 GoldenrodCityCooltrainerF1Text:
 	text "Earlier today I"
-	line "went to the dept"
+	line "went to the DEPT."
 
-	para "store and bought a"
-	line "moon stone, then"
+	para "STORE and bought a"
+	line "MOON STONE. Then"
 
-	para "my eevee evolved"
-	line "into Umbreon!"
+	para "my EEVEE evolved"
+	line "into UMBREON!"
 	done
 
 GoldenrodCityCooltrainerF1Text_ClearedRadioTower:
